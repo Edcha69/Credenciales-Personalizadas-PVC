@@ -1,229 +1,237 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prioritas Creativo - Credenciales PVC Personalizadas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="description" content="Credenciales PVC personalizadas en Quito, Ecuador. Impresión HD, diseño profesional y entrega puntual. Cotiza ahora con Prioritas Creativo.">
+    <title>Prioritas Creativo | Credenciales PVC y Diseño Gráfico</title>
+    
+    <!-- Fuente Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Enlace al CSS (Subimos un nivel para salir de html y entrar a css) -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- 1. HEADER / NAVBAR -->
-    <header class="header">
-        <div class="container navbar">
-            <div class="logo">
-                <img src="logo.svg" alt="Logo Prioritas Creativo">
-                Prioritas Creativo
-            </div>
-            
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="6d33b2fe-70bb-4521-acb9-3afc7585eaeb.png">
+            </a>
+            <input type="checkbox" id="mobile-check">
+            <label for="mobile-check" class="menu-toggle"><i class="fas fa-bars"></i></label>
             <nav class="nav-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#precios">Precios</a>
-                <a href="#proceso">Proceso</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#inicio" onclick="document.getElementById('mobile-check').checked = false">Inicio</a>
+                <a href="#servicios" onclick="document.getElementById('mobile-check').checked = false">Servicios</a>
+                <a href="#precios" onclick="document.getElementById('mobile-check').checked = false">Precios</a>
+                <a href="#proceso" onclick="document.getElementById('mobile-check').checked = false">Proceso</a>
+                <a href="#contacto" onclick="document.getElementById('mobile-check').checked = false">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <!-- 2. HERO SECTION -->
-    <section id="inicio" class="hero container">
-        <div class="hero-content">
-            <h1>Credenciales PVC Personalizadas</h1>
-            <p>Diseño, impresión, calidad y puntualidad para tu empresa o evento</p>
-            <div class="hero-buttons">
-                <a href="https://wa.me/593984853643" target="_blank" class="btn btn-primary">Solicitar Cotización</a>
-                <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
-            </div>
-        </div>
-        <div class="hero-visual">
-            <div class="credential-placeholder">
-                <div class="cp-photo"></div>
-                <div class="cp-lines">
-                    <div class="cp-line title"></div>
-                    <div class="cp-line"></div>
-                    <div class="cp-line short"></div>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Credenciales PVC Personalizadas en Quito</h1>
+                <p>Identificación profesional de alta calidad. Diseño a medida, materiales premium y entrega puntual para tu empresa u organización.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: inherit;">
+                    <a href="#precios" class="btn btn-primary">Ver Precios</a>
+                    <a href="#servicios" class="btn btn-outline">Servicios</a>
                 </div>
-                <div class="cp-logo"></div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="lanyard1.png" alt="Credencial y lanyard Prioritas" class="hero-image">
             </div>
         </div>
     </section>
 
-    <!-- 3. SERVICIOS -->
-    <section id="servicios" class="services">
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="section-padding features">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="features-grid">
+                <div class="feature-item"><i class="fas fa-print"></i><h4>Impresión HD</h4><p>Alta definición y colores vibrantes.</p></div>
+                <div class="feature-item"><i class="fas fa-shield-alt"></i><h4>Materiales Resistentes</h4><p>PVC duradero, resistente al desgaste.</p></div>
+                <div class="feature-item"><i class="fas fa-clock"></i><h4>Entrega Puntual</h4><p>Cumplimos estrictamente los plazos.</p></div>
+                <div class="feature-item"><i class="fas fa-user-check"></i><h4>Atención Personalizada</h4><p>Te asesoramos en cada detalle.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section-padding services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones integrales de identificación y diseño gráfico.</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><i class="fa-regular fa-id-card"></i></div>
-                    <h3>CREDENCIALES PVC PERSONALIZADAS</h3>
-                    <p>Identificación profesional con diseño a medida y materiales premium</p>
+                    <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                    <h3>Credenciales PVC</h3>
+                    <p>Formato CR-80 estándar. Impresión profesional, diseño a medida y materiales premium de alta durabilidad.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
-                    <h3>DISEÑO</h3>
-                    <p>Diseño gráfico coorporativo, web, multimedia.</p>
+                    <div class="icon-box"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Diseño Gráfico</h3>
+                    <p>Diseño corporativo, web y multimedia. Creamos la identidad visual que tu marca necesita para destacar.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fa-solid fa-id-badge"></i></div>
-                    <h3>TARJETAS VIRTUALES</h3>
-                    <p>Interactivas: enlaza tu portfolio, redes sociales, videos, calendario de reuniones y sitio web.
-                    </p>
+                    <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Tarjetas Virtuales</h3>
+                    <p>Tarjetas interactivas digitales. Enlaces a portfolio, redes sociales, videos y calendario de reuniones.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. PRECIOS -->
-    <section id="precios" class="pricing">
+    <!-- PRECIOS -->
+    <section id="precios" class="section-padding pricing">
         <div class="container">
-            <h2 class="section-title">Precios Credenciales PVC CR-80</h2>
-            <p class="section-subtitle">Elige la cantidad que necesitas. Todos los precios incluyen diseño.</p>
+            <div class="text-center">
+                <h2 class="section-title">Precios Credenciales CR-80</h2>
+                <p class="section-subtitle">Elige el plan que mejor se adapte a tu proyecto.</p>
+            </div>
+
             <div class="pricing-grid">
-                <div class="price-card">
-                    <div class="price-header">1 - 3 credenciales</div>
-                    <div class="price-row">
-                        <span>Impresión Simple</span>
-                        <span class="price-val">$3.00</span>
+                <!-- Tarjeta 1-3 -->
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <div class="price-quantity">1 – 3 unidades</div>
                     </div>
-                    <div class="price-row">
-                        <span>Impresión Doble Cara</span>
-                        <span class="price-val">$3.50</span>
+                    <div class="price-options">
+                        <div class="price-row">
+                            <span class="price-label">Simple</span>
+                            <span class="price-value">$3.00</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Doble Cara</span>
+                            <span class="price-value">$3.50</span>
+                        </div>
                     </div>
-                    <hr class="price-divider">
-                    <a href="https://wa.me/593984853643" target="_blank" class="btn btn-price">+ Info</a>
+                    <div style="text-align: center; margin-bottom: 15px;"><span class="price-includes">Incluye Diseño</span></div>
+                    <a href="https://wa.me/593984853643?text=Hola,%20quiero%20cotizar%201-3%20credenciales" target="_blank" class="btn btn-outline">Cotizar</a>
                 </div>
-                <div class="price-card">
-                    <div class="price-header">4 - 11 credenciales</div>
-                    <div class="price-row">
-                        <span>Impresión Simple</span>
-                        <span class="price-val">$2.00</span>
+
+                <!-- Tarjeta 4-11 -->
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <div class="price-quantity">4 – 11 unidades</div>
                     </div>
-                    <div class="price-row">
-                        <span>Impresión Doble Cara</span>
-                        <span class="price-val">$2.50</span>
+                    <div class="price-options">
+                        <div class="price-row">
+                            <span class="price-label">Simple</span>
+                            <span class="price-value">$2.00</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Doble Cara</span>
+                            <span class="price-value">$2.50</span>
+                        </div>
                     </div>
-                    <hr class="price-divider">
-                    <a href="https://wa.me/593984853643" target="_blank" class="btn btn-price">+ Info</a>
+                    <div style="text-align: center; margin-bottom: 15px;"><span class="price-includes">Incluye Diseño</span></div>
+                    <a href="https://wa.me/593984853643?text=Hola,%20quiero%20cotizar%204-11%20credenciales" target="_blank" class="btn btn-outline">Cotizar</a>
                 </div>
-                <div class="price-card">
-                    <div class="price-header">12 - 99 credenciales</div>
-                    <div class="price-row">
-                        <span>Impresión Simple</span>
-                        <span class="price-val">$1.50</span>
+
+                <!-- Tarjeta 12-99 -->
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <div class="price-quantity">12 – 99 unidades</div>
                     </div>
-                    <div class="price-row">
-                        <span>Impresión Doble Cara</span>
-                        <span class="price-val">$2.00</span>
+                    <div class="price-options">
+                        <div class="price-row">
+                            <span class="price-label">Simple</span>
+                            <span class="price-value">$1.50</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Doble Cara</span>
+                            <span class="price-value">$2.00</span>
+                        </div>
                     </div>
-                    <hr class="price-divider">
-                    <a href="https://wa.me/593984853643" target="_blank" class="btn btn-price">+ Info</a>
+                    <div style="text-align: center; margin-bottom: 15px;"><span class="price-includes">Incluye Diseño</span></div>
+                    <a href="https://wa.me/593984853643?text=Hola,%20quiero%20cotizar%2012-99%20credenciales" target="_blank" class="btn btn-outline">Cotizar</a>
                 </div>
-                <!-- Tarjeta Destacada -->
-                <div class="price-card popular">
-                    <div class="popular-badge">Más popular</div>
-                    <div class="price-header">Más de 100 credenciales</div>
-                    <div class="price-row">
-                        <span>Impresión Simple</span>
-                        <span class="price-val">$1.00</span>
+
+                <!-- Tarjeta 100+ (POPULAR) -->
+                <div class="pricing-card popular">
+                    <span class="badge-popular">Más Popular</span>
+                    <div class="price-header">
+                        <div class="price-quantity">100+ unidades</div>
                     </div>
-                    <div class="price-row">
-                        <span>Impresión Doble Cara</span>
-                        <span class="price-val">$1.50</span>
+                    <div class="price-options">
+                        <div class="price-row">
+                            <span class="price-label">Simple</span>
+                            <span class="price-value">$1.00</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-label">Doble Cara</span>
+                            <span class="price-value">$1.50</span>
+                        </div>
                     </div>
-                    <hr class="price-divider">
-                    <a href="https://wa.me/593984853643" target="_blank" class="btn btn-price">+ Info</a>
+                    <div style="text-align: center; margin-bottom: 15px;"><span class="price-includes">Incluye Diseño</span></div>
+                    <a href="https://wa.me/593984853643?text=Hola,%20quiero%20cotizar%20100+%20credenciales" target="_blank" class="btn btn-primary">Cotizar Ahora</a>
                 </div>
             </div>
+
+            <p class="pricing-note">* Precios por unidad. Sujetos a verificación de diseño.</p>
         </div>
     </section>
 
-    <!-- 5. PROCESO DE TRABAJO -->
-    <section id="proceso" class="process">
+    <!-- PROCESO -->
+    <section id="proceso" class="section-padding process">
         <div class="container">
-            <h2 class="section-title">¿Cómo Trabajamos?</h2>
+            <div class="text-center">
+                <h2 class="section-title">Proceso de Trabajo</h2>
+                <p class="section-subtitle">¿Cómo trabajar con Prioritas Creativo?</p>
+            </div>
             <div class="process-steps">
                 <div class="step">
-                    <div class="step-number">01</div>
-                    <h3 class="step-title">Cotización</h3>
-                    <p class="step-desc">Solicita tu presupuesto</p>
+                    <span class="step-number">1</span>
+                    <h4>Cotización</h4>
+                    <p>El cliente solicita su presupuesto a través de WhatsApp.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">02</div>
-                    <h3 class="step-title">Diseño</h3>
-                    <p class="step-desc">Aprobamos el arte final</p>
+                    <span class="step-number">2</span>
+                    <h4>Diseño</h4>
+                    <p>Elaboramos el arte y esperamos su aprobación.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">03</div>
-                    <h3 class="step-title">Aprobación</h3>
-                    <p class="step-desc">Verificamos los datos</p>
+                    <span class="step-number">3</span>
+                    <h4>Aprobación</h4>
+                    <p>Se verifican datos finales antes de imprimir.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">04</div>
-                    <h3 class="step-title">Entrega</h3>
-                    <p class="step-desc">Recibes tus credenciales</p>
+                    <span class="step-number">4</span>
+                    <h4>Entrega</h4>
+                    <p>El cliente recibe sus credenciales en Quito.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. ¿POR QUÉ ELEGIRNOS? -->
-    <section class="why-us">
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-padding contact">
         <div class="container">
-            <h2 class="section-title">¿Por Qué Prioritas Creativo?</h2>
-            <div class="why-us-grid">
-                <div class="feature">
-                    <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
-                    <div class="feature-text">Calidad de impresión HD</div>
+            <div class="contact-card">
+                <h2>¿Listo para comenzar?</h2>
+                <p>Toda la atención y cotizaciones se gestionan directamente vía WhatsApp.</p>
+                <div class="contact-info">
+                    <div style="margin-bottom: 10px;"><i class="fab fa-whatsapp"></i> +593 98 485 3643</div>
+                    <div><i class="fas fa-map-marker-alt"></i> Quito, Ecuador</div>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div class="feature-text">Materiales resistentes al desgaste</div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
-                    <div class="feature-text">Entrega puntual en todos nuestros proyectos</div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
-                    <div class="feature-text">Atención personalizada</div>
-                </div>
+                <a href="https://wa.me/593984853643?text=Hola,%20deseo%20más%20información" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contactar Ahora</a>
             </div>
         </div>
     </section>
 
-    <!-- 7. CONTACTO -->
-    <section id="contacto" class="contact">
-        <div class="container contact-container">
-            <h2 class="section-title">Hablemos de tu Proyecto</h2>
-            <p>Contáctanos por WhatsApp y recibe tu cotización personalizada en minutos</p>
-            <a href="https://wa.me/593984853643" target="_blank" class="btn btn-whatsapp">
-                <span class="wa-icon"><i class="fa-brands fa-whatsapp"></i></span> Escríbenos al WhatsApp
-            </a>
-            <div class="location">
-                <span class="loc-icon"><i class="fa-solid fa-location-dot"></i></span> Quito, Ecuador
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="logo.svg" alt="Logo Prioritas Creativo">
-                Prioritas Creativo
-            </div>
-            <div class="footer-location">Quito, Ecuador</div>
-            <div class="footer-year">© 2026 Prioritas Creativo. Todos los derechos reservados.</div>
-        </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container"><p>&copy; 2026 Prioritas Creativo. Todos los derechos reservados.</p></div>
     </footer>
-</body>
 
+</body>
 </html>
